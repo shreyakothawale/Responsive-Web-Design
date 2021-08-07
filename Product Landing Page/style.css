@@ -1,0 +1,74 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding:3.5%;
+  color:white;
+  background: #000 url("https://res.cloudinary.com/zinodavidoff/image/upload/v1542285623/01%20-%20Header%202.jpg") no-repeat fixed center; 
+}
+
+h2{
+  margin-top:5%;
+  margin-bottom:2%;
+}
+.btn{
+  background-color:brown;
+  margin: 15px 0;
+  border-color:brown;
+}
+.btn:hover{
+  background-color:#000;
+  border-color:#000
+}
+#features, #pricing{
+  margin-top:5%;
+  margin-left:10%;
+  margin-right:10%;
+}
+#features .row{
+  margin-top:1%;
+}
+i{
+  color:brown;
+}
+
+.col-1{
+  text-align:right;
+  margin-top:7%;
+  margin-right:2%;
+}
+
+@media(max-width:550px){
+  .col-1{
+    display: none ;
+  }
+}
+
+#product {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#product > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+.card{
+  text-align:center;
+}
+
+.card img{
+  padding:10%; 
+}
+
+a{
+  text-decoration:none;
+}
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
