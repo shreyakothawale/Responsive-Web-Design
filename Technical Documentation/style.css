@@ -167,17 +167,17 @@ a.article:hover {
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
+    #navbar {
+        margin-left: -300px;
     }
-    #sidebar.active {
+    #navbar.active {
         margin-left: 0;
     }
     #content {
         width: 100%;
     }
     #content.active {
-        width: calc(100% - 250px);
+        width: calc(100% - 300px);
     }
     #sidebarCollapse span {
         display: none;
