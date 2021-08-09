@@ -76,7 +76,7 @@ a:focus {
 }
 
 #navbar.active {
-    margin-left: -250px;
+    margin-left: -300px;
 }
 
 #navbar .sidebar-header {
