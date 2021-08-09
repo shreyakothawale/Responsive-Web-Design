@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+<nav id="navbar">
+  <header class="sidebar-header">
+                <h3>Application Programming Interface (API)</h3>
+            </header>
+
+            <ul class="list-unstyled components">
+                <p>API</p>
+                <li class="active"><a class="nav-link" href="#api">What is an API and How Do They Work?</a> </li>
+                <li><a class="nav-link" href="#imp">Why are APIs important?</a></li>
+                <li><a class="nav-link" href="#need">Benefits of APIs</a></li>
+                <li><a class="nav-link" href="#types">Types of APIs</a></li>
+                <li><a class="nav-link" href="#more">Endpoints</a></li>
+                <li><a class="nav-link" href="#example">Numbers API on RapidAPI</a></li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download nav-link">Read More</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article nav-link">Back to article</a>
+                </li>
+            </ul>
+</nav>
+  <div id="content">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+<main id="main-doc">
+  <div class="container">
+  <section class="main-section">
+    <header id="api"><h2>What is an API and How Do They Work?</h2></header>
+    <p class="lead">In the process of improving your applications, you will eventually come across a term like API.<br><br>
+
+API stands for Application Programming Interface.<br><br>
+
+It is impossible to imagine modern development without APIs. This term has many definitions, but we will try to explain it as simple as possible.</p>
+    <section id="product">
+    <iframe height="300" src="https://www.youtube.com/embed/rLVeSrLQOM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+    <p class="lead">
+      API is like an open language, the rules of which are shared by a certain service.<br><br>
+
+You can teach your application the rules of this language, so it can communicate with the service and access all the functions and data that the service is ready to share.<br>
+
+Speaking a little more formally, API is an interface that allows your application to interact with an external service using a simple set of commands.<br>
+
+You do not need to know the internal logic of the service, just send a simple command and the service will return the necessary data.</p>
+<p class="lead">
+
+For example, if you need to contact the news aggregator API and get ten of today’s most popular news from it, you refer to the “topnews” command (which the service described in advance in the public domain), and in response, the service will send you the latest collection of sensations.
+    </p>
+    </section><div class="line"></div>
+  <section class="main-section">
+    <header id="imp"><h2>Why are APIs important?</h2></header>
+    <p class="lead">If there were no APIs, the functionality of your applications would be limited, and the development time would increase significantly since any function that is not implemented as a module of one of the programming languages would have to be developed independently.
+
+APIs tie disparate applications together, allowing them to complement each other.</p>
+<p class="lead">
+
+The hotel selection service uses an external API for recognizing and cataloging photos of rooms, the same service itself through the API provides an opportunity to select and book hotel rooms, thus enriching the functionality of many travel applications.<br><br>
+
+If there were no API, each application would be limited to a narrow list of its own functions without the possibility of expanding it to something that others have already invented and used for a long time.</p>
+  </section><div class="line"></div>
+  <section class="main-section">
+    <header id="need"><h2>Benefits of APIs</h2></header>
+    <p class="lead">APIs allow you to save time when developing and help not to invent a bicycle.<br><br>
+
+It is much more efficient and more convenient to use the capabilities of one of the APIs than to try to independently implement similar functionality.<br><br>
+
+Moreover, it will be problematic to get some functions and data other than through the API (for example, a weather forecast, a thematic selection of news or a high-quality translation from almost any language).</p>
+<p class="lead">
+APIs recharge your applications with the latest technology. With APIs, you can teach your application the latest image recognition and natural language processing methods.
+  </section><div class="line"></div>
+  <section class="main-section">
+    <header id="types"><h2>Types of APIs</h2></header>
+    <p class="lead">There are four main types of APIs:
+    <ul class="lead">
+      <li>Open APIs: Also known as Public APIs, there are no restrictions to access these types of APIs because they are publicly available.</li>
+      <li>Partner APIs: One needs specific rights or licenses in order to access this type of APIs because they are not available to the public.</li>
+      <li>Internal APIs: Also known as Private APIs, only internal systems expose this type of API, which is, therefore, less known and often meant to be used inside the company. The company uses this type of API among the different internal teams to be able to improve its products and services.</li>
+      <li>Composite APIs: This type of API combines different data and service APIs. It is a sequence of tasks that run synchronously as a result of the execution and not at the request of a task.</li>
+      <li>Its main uses are to speed up the process of execution and improve the performance of the listeners in the web interfaces.</li>
+    </ul></p>
+  </section><div class="line"></div>
+  <section class="main-section">
+    <header id="more"><h2>Endpoints</h2></header>
+    <p class="lead">Endpoints are the key elements in the interaction of your application with the API. Usually, it is a specific address (for example, https://newssite.com/topnews), by referring to which you get access to certain features/functions (in our case – a list of top news).<br><br>
+
+Commonly, the name (address) of the endpoint corresponds to the functionality it provides.<br><br>
+
+To learn more about endpoints, we will look at another example, this time within the RapidAPI service.<br>
+
+This service is an API Hub providing the ability to access thousands of different APIs.<br><br>
+
+Another advantage of RapidAPI is that you can access endpoints and test the work of the API directly in its section within the RapidAPI service.<br>
+
+You don’t need to immediately write a program or launch a Postman application to get an idea of the capabilities of the API.</p>
+<p class="lead">
+
+Let’s take for example the Numbers API. This is a simple and free API providing interesting information about numbers and dates.</p>
+  </section><div class="line"></div>
+  <section class="main-section">
+    <header id="example"><h2>Numbers API on RapidAPI<h2></header>
+      <p class="lead">In order to find Numbers API section, enter its name in the search box in the RapidAPI service or go to the “Education” category from “All Categories” list and select this API from the list. Numbers API through RapidAPI is free, so you can use it freely as many times as you want.<br><br>
+      Once you select Numbers API, the first page you’ll see is the API Endpoints subsection. This includes most of the information needed to get started. The API Endpoints subsection includes navigation, a list of endpoints, the documentation of the currently selected endpoint, and a code snippet (available in 8 different programming languages) to help you get started with your code.<br><br>
+      From the current subsection (Endpoints), we can test the API endpoint directly in the browser by changing the input for the endpoint. Once we make a request to the API by using the ‘Test Endpoint’ button, we will also see the response directly in the browser.<br><br>
+
+Let’s test Get math fact endpoint which provides a piece of interesting information about an arbitrary number. In this case, we are interested in the information about the number 42. Enter 42 in the only required parameter ‘number’ and click ‘Test Endpoint’ button.<br><br>
+
+We can see the JSON response from the API in the ‘Your Response’ tab, the Response Body block. In our case, it is the following:<br><br>
+        <div class="card">
+          <div class="card-body">
+        <code>{</code><br>
+        <code>"text":"a perfect score on the USA Math Olympiad (USAMO) and International Mathematical Olympiad (IMO)"</code><br>
+        <code>"number":42</code><br>
+        <code>"found":true</code><br>
+        <code>"type":"math"</code><br>
+        <code>}</code>
+            </div>
+         </div><br><br>
+        Congratulations! We made the first call to this API and got the first (probably) useful answer. It was not too difficult, right?
+</p>
+  </section><div class="line"></div>
+  </div>
+</main>
+</div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+<script src='https://use.fontawesome.com/releases/v5.0.13/js/solid.js'></script>
+<script src='https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js'></script>
+<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
